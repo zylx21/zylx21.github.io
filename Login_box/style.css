@@ -1,0 +1,85 @@
+* {
+    box-sizing:border-box
+}
+html {
+    height: 100%; 
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color:#7b8afc
+}
+
+.login {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50% , -50%);
+    background: rgba(65, 56, 170,.5);
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+    width: 400px;
+    padding: 50px
+}
+
+.login h2 {
+    margin: 0 0 20px 0 ;
+    color:#fff;
+    text-align:center;
+}
+
+.login .areas {
+    position:relative;
+}
+
+.login .areas input {
+    background:transparent;
+    color:#fff;
+    border:none;
+    outline:none;
+    border-bottom: 2px solid #fff;
+    padding:10px 0;
+    margin-bottom: 30px;
+    width: 100%;
+    font-size:15px;
+}
+
+.login .areas label {
+    position:absolute;
+    top:0;
+    left:0;
+    color:#fff;
+    font-size:16px;
+    padding: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.login .areas input:focus ~ label,
+.login .areas input:valid ~ label {
+    top: -20px;
+    left:0;
+    color:#03e9f4;
+    font-size:12px;
+}
+
+
+a {
+    outline:none;
+    border-radius:7px;
+    background-color: #050e42;
+    color:white;
+    padding: 15px;
+    cursor: pointer;
+    position: relative;
+    left: 38%;
+    margin-top: 10px;
+    text-decoration:none;
+}
+
+a:hover {
+    background-color: white;
+    color:#133a6b ;
+}
